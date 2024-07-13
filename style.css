@@ -1,6 +1,29 @@
-.grid {
+#container {
 background-color: blue;
+color: blue;
+
+display: flex;
+
+flex-wrap: wrap;
+justify-content: center;
+
+margin: 0;
+height: 50%;
+width: 50%;
+
+padding: 0px;
+margin: 0px;
+
 }
 .square {
+    
     background-color: red;
+    flex: 0 0 20%;
+    aspect-ratio: 1/1;
+    
+    padding: 5px;
+    margin: 0px;
+
+    border-style: dotted;
+    border-width: 1px;
 }
