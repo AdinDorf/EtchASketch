@@ -1,5 +1,5 @@
 #container {
-background-color: blue;
+background-color: white;
 color: blue;
 
 display: flex;
@@ -8,10 +8,10 @@ flex-wrap: wrap;
 justify-content: center;
 
 margin: 0;
-height: 50%;
 width: 50%;
+height: auto;
 
-padding: 0px;
+padding: 1px;
 margin: 0px;
 
 }
@@ -20,10 +20,8 @@ margin: 0px;
     background-color: red;
     flex: 0 0 20%;
     aspect-ratio: 1/1;
-    
+
     padding: 5px;
     margin: 0px;
 
-    border-style: dotted;
-    border-width: 1px;
 }
