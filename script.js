@@ -1,14 +1,29 @@
 const grid = document.querySelector("#container");
-const gridSize = 10000;
+const button = document.querySelector('.button');
+const input = document.querySelector('.textInput');
+let gridSize = 100;
 
 createGrid();
+
+button.addEventListener("click", () => 
+    {
+        let val = Number(input.value);
+        
+        if (Number.isInteger(val))
+        {
+            gridSize = val;
+            createGrid()
+        }
+        else{
+            alert("Error: NaN");
+        }
+    }) ;
 
 function createGrid()
 {
     grid.innerHTML='';
     const squareSize = Math.floor(Math.sqrt(gridSize));
-    console.log(squareSize);
-    for(let i = 0; i < gridSize; i++) {
+        for(let i = 0; i < gridSize; i++) {
         
         const gridSquare = document.createElement("div");
         
@@ -24,7 +39,7 @@ function createGrid()
         );
         gridSquare.addEventListener("mouseout", () =>
             {
-                gridSquare.style.backgroundColor = 'red';
+                gridSquare.style.backgroundColor = 'white';
             }
         );
         grid.appendChild(gridSquare);

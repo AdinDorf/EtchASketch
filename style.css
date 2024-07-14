@@ -1,7 +1,15 @@
+
+.formattingbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #container {
 background-color: blue;
-color: blue;
+color: black;
 
+border-style: solid;
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
@@ -13,8 +21,10 @@ padding: 0px;
 margin: 0px;
 
 }
+
+
 .square {
-    background-color: red;
+    background-color: white;
     padding:0px;
     margin: 0px;
 }
