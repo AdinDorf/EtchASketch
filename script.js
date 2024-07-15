@@ -1,7 +1,7 @@
 const grid = document.querySelector("#container");
 const button = document.querySelector('.button');
 const input = document.querySelector('.textInput');
-let gridSize = 100;
+let squareSize = 100;
 
 createGrid();
 
@@ -11,7 +11,7 @@ button.addEventListener("click", () =>
         
         if (Number.isInteger(val))
         {
-            gridSize = val;
+            squareSize = val;
             createGrid()
         }
         else{
@@ -22,8 +22,8 @@ button.addEventListener("click", () =>
 function createGrid()
 {
     grid.innerHTML='';
-    const squareSize = Math.floor(Math.sqrt(gridSize));
-        for(let i = 0; i < gridSize; i++) {
+
+    for(let i = 0; i < squareSize*squareSize; i++) {
         
         const gridSquare = document.createElement("div");
         
